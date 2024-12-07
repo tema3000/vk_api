@@ -20,10 +20,10 @@ ItemsDto _$ItemsDtoFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$ItemsDto {
-  int get id => throw _privateConstructorUsedError;
+  int? get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   String get screen_name => throw _privateConstructorUsedError;
-  int get is_closed => throw _privateConstructorUsedError;
+  int? get is_closed => throw _privateConstructorUsedError;
   String get type => throw _privateConstructorUsedError;
   String get photo_50 => throw _privateConstructorUsedError;
   String get photo_100 => throw _privateConstructorUsedError;
@@ -45,10 +45,10 @@ abstract class $ItemsDtoCopyWith<$Res> {
       _$ItemsDtoCopyWithImpl<$Res, ItemsDto>;
   @useResult
   $Res call(
-      {int id,
+      {int? id,
       String name,
       String screen_name,
-      int is_closed,
+      int? is_closed,
       String type,
       String photo_50,
       String photo_100,
@@ -70,20 +70,20 @@ class _$ItemsDtoCopyWithImpl<$Res, $Val extends ItemsDto>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
+    Object? id = freezed,
     Object? name = null,
     Object? screen_name = null,
-    Object? is_closed = null,
+    Object? is_closed = freezed,
     Object? type = null,
     Object? photo_50 = null,
     Object? photo_100 = null,
     Object? photo_200 = null,
   }) {
     return _then(_value.copyWith(
-      id: null == id
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -92,10 +92,10 @@ class _$ItemsDtoCopyWithImpl<$Res, $Val extends ItemsDto>
           ? _value.screen_name
           : screen_name // ignore: cast_nullable_to_non_nullable
               as String,
-      is_closed: null == is_closed
+      is_closed: freezed == is_closed
           ? _value.is_closed
           : is_closed // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -125,10 +125,10 @@ abstract class _$$ItemsDtoImplCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {int id,
+      {int? id,
       String name,
       String screen_name,
-      int is_closed,
+      int? is_closed,
       String type,
       String photo_50,
       String photo_100,
@@ -148,20 +148,20 @@ class __$$ItemsDtoImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = null,
+    Object? id = freezed,
     Object? name = null,
     Object? screen_name = null,
-    Object? is_closed = null,
+    Object? is_closed = freezed,
     Object? type = null,
     Object? photo_50 = null,
     Object? photo_100 = null,
     Object? photo_200 = null,
   }) {
     return _then(_$ItemsDtoImpl(
-      id: null == id
+      id: freezed == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -170,10 +170,10 @@ class __$$ItemsDtoImplCopyWithImpl<$Res>
           ? _value.screen_name
           : screen_name // ignore: cast_nullable_to_non_nullable
               as String,
-      is_closed: null == is_closed
+      is_closed: freezed == is_closed
           ? _value.is_closed
           : is_closed // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
@@ -198,21 +198,20 @@ class __$$ItemsDtoImplCopyWithImpl<$Res>
 @JsonSerializable()
 class _$ItemsDtoImpl implements _ItemsDto {
   _$ItemsDtoImpl(
-      {this.id = 11111,
-      this.name = 'Название',
-      this.screen_name = 'Название 2 ',
-      this.is_closed = 0,
-      this.type = 'Сообщество',
-      this.photo_50 = 'img 1',
-      this.photo_100 = 'img 2',
-      this.photo_200 = 'img 3'});
+      {this.id,
+      this.name = '',
+      this.screen_name = '',
+      this.is_closed,
+      this.type = '',
+      this.photo_50 = '',
+      this.photo_100 = '',
+      this.photo_200 = ''});
 
   factory _$ItemsDtoImpl.fromJson(Map<String, dynamic> json) =>
       _$$ItemsDtoImplFromJson(json);
 
   @override
-  @JsonKey()
-  final int id;
+  final int? id;
   @override
   @JsonKey()
   final String name;
@@ -220,8 +219,7 @@ class _$ItemsDtoImpl implements _ItemsDto {
   @JsonKey()
   final String screen_name;
   @override
-  @JsonKey()
-  final int is_closed;
+  final int? is_closed;
   @override
   @JsonKey()
   final String type;
@@ -283,10 +281,10 @@ class _$ItemsDtoImpl implements _ItemsDto {
 
 abstract class _ItemsDto implements ItemsDto {
   factory _ItemsDto(
-      {final int id,
+      {final int? id,
       final String name,
       final String screen_name,
-      final int is_closed,
+      final int? is_closed,
       final String type,
       final String photo_50,
       final String photo_100,
@@ -296,13 +294,13 @@ abstract class _ItemsDto implements ItemsDto {
       _$ItemsDtoImpl.fromJson;
 
   @override
-  int get id;
+  int? get id;
   @override
   String get name;
   @override
   String get screen_name;
   @override
-  int get is_closed;
+  int? get is_closed;
   @override
   String get type;
   @override

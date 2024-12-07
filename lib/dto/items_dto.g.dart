@@ -8,14 +8,14 @@ part of 'items_dto.dart';
 
 _$ItemsDtoImpl _$$ItemsDtoImplFromJson(Map<String, dynamic> json) =>
     _$ItemsDtoImpl(
-      id: (json['id'] as num?)?.toInt() ?? 11111,
-      name: json['name'] as String? ?? 'Название',
-      screen_name: json['screen_name'] as String? ?? 'Название 2 ',
-      is_closed: (json['is_closed'] as num?)?.toInt() ?? 0,
-      type: json['type'] as String? ?? 'Сообщество',
-      photo_50: json['photo_50'] as String? ?? 'img 1',
-      photo_100: json['photo_100'] as String? ?? 'img 2',
-      photo_200: json['photo_200'] as String? ?? 'img 3',
+      id: (json['id'] as num?)?.toInt(),
+      name: json['name'] as String? ?? '',
+      screen_name: json['screen_name'] as String? ?? '',
+      is_closed: (json['is_closed'] as num?)?.toInt(),
+      type: json['type'] as String? ?? '',
+      photo_50: json['photo_50'] as String? ?? '',
+      photo_100: json['photo_100'] as String? ?? '',
+      photo_200: json['photo_200'] as String? ?? '',
     );
 
 Map<String, dynamic> _$$ItemsDtoImplToJson(_$ItemsDtoImpl instance) =>
